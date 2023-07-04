@@ -1,5 +1,7 @@
 def bmp2text():
-    _path = input('输入bmp图片绝对路径：')
+    _path = input('输入bmp图片路径：').replace("'","")
+    if _path[-1:] == ' ':
+        _path = _path[:-1]
     with open(_path, 'rb') as _f:
         _everything = _f.read()
 
