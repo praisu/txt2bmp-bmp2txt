@@ -71,7 +71,7 @@ def pic_write(_path, _head, _new_data):
 
 
 def main():
-    _path = input('输入绝对路径：').replace("'","")
+    _path = input('输入文本文件路径：').replace("'","")
     if _path[-1:] == ' ':
         _path = _path[:-1]
     print(_path)
