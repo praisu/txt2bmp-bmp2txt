@@ -67,12 +67,11 @@ def pic_write(_path, _head, _new_data):
                 _bj = _j.to_bytes(2, 'big')
                 _f.write(_bj)
         _f.write(_new_data)
-        print('Write success!')
     print('Done!')
 
 
 def main():
-    _path = input('输入绝对路径：')
+    _path = input('输入绝对路径：').replace("'","")
     if _path[-1:] == ' ':
         _path = _path[:-1]
     print(_path)
